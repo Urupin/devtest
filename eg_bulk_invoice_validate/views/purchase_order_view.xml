@@ -1,0 +1,9 @@
+<odoo>
+    <record model="ir.actions.server" id="stock_picking_for_bulk_in_customer_invoice">
+        <field name="name">Confirm Invoice</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="binding_model_id" ref="account.model_account_move"/>
+        <field name="state">code</field>
+        <field name="code">action = records.invoice_bulk_validate()</field>
+    </record>
+</odoo>
